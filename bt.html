@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Text</title>
+</head>
+<body>
+    <p id="text">Hello World</p>
+    <button onclick="changeText()">Click Here</button>
+    <input type="text" id="name" placeholder=""enter your name">
+    <button onclick="checkInput()">submit</button>"
+    <p id="result"></p>
+    <script> 
+    function changeText()
+    {
+        document.getElementById("text").innerHTML="Text Changed!";
+    }
+    function checkInput() {
+            let value = document.getElementById("name").value;
+
+            if(value === "") {
+                document.getElementById("result").innerHTML = "Input field is empty";
+            } else {
+                document.getElementById("result").innerHTML = "You entered: " + value;
+            }
+        }
+    
+
+    </script>
+</body>
+</html>

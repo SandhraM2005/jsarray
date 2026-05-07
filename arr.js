@@ -8,3 +8,14 @@ console.log(students);
 students.pop("sangi");
 console.log(students);
 console.log(students.length);
+for(let i = 0; i < students.length; i++)
+{
+    console.log(students[i]);
+}
+let student = { 
+    name: "san",
+    age:21,
+    course:"B.Tech"
+};
+console.log(student);
+
